@@ -17,6 +17,19 @@
     padding: 15px;
     text-align: center;
   }
+
+
+  .tab.active {
+    background-color: #fff;
+    border-bottom: 3px solid #000; 
+    font-weight: bold;
+  }
+
+
+  [data-tab-content] { display: none; padding: 20px; }
+  .active[data-tab-content] { display: block; }
+
+</style>
     </style>
 </head>
 <body>
@@ -40,23 +53,60 @@
         <article id="2" data-tab-content>
             <h1>Aquarion</h1>
             <p>The oceanic tribe known for theri speedy attacks and their amazing life on water.</p>
+            <p><bold>Top ten tips on how to play with this tribe:</bold></p>
+            <p>1.Priorotize the "spearing" tech. Reaching tridentions means beign able to do chain attacks, as well as good range.</p>
+            <p>2.Get flooding! Flood waterways near enemy cities to increase your chance of stealign them over.</p>
+            <p>3.Swim out to the ocean as fast as possible. Use what Aquarions are best for, and map out the area; knowing who and where the enemies are before they know you.</p>
+            <p>4.If the enemy is building a navy, send out as many sharks as possible to swarm the enemy.</p>
+            <p>5.Place a "Jelly" down by every city which is close to danger. It's shock attack is very helpful for protecting land.</p>
+            <p>6.Explore deep sea ruins to grow quickly! This is the best thing to do if you want to grow a giant empire wit hthsi tribe.</p>
+            <p>7.Auto flood land with the crab to move faster on land while slowign down the enemy.</p>
+            <p>8.Jelly tanking. Though I already mentioned jellies in thsi list, I did not state yet that you can use them as a shield to protect large groups of travelers on your side.</p>
+            <p>9.If yoru crab attacks an enemy in a city surrounded by water, it cna push them into water. If that unit is nto amphibious, it will drown instantly allowing you to claim the city.</p>
+            <p>10.Don't forget that yo ucna build any structure directly on water tiles with aqua base. This can come in handy in the long game.</p>
         </article>
 
         <article id="3" data-tab-content>
             <h1>∑∫ỹriȱŋ</h1>
-            <p>The fantasy-like tribe </p>
+            <p>The fantasy-like tribe that views nature to be divine.</p>
             <section></section>
         </article>
 
         <article id="4" data-tab-content>
             <h1>Polaris</h1>
+            <p>Known for their snowy apprance and icy gliding.</p>
         </article>
 
         <article id="5" data-tab-content>
             <h1>Cymanti</h1>
-            <p></p>
+            <p>An insect themed tribe with poison effects.</p>
             <section></section>
         </article>
     </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=> {
+    const tabContents = document.querySelectorAll('[data-tab-content]');
+    const tabs = document.querySelectorAll('[data-tab-target]');
+
+
+    tabs.forEach (tab => {
+        tab.addEventListener('click', () => {
+        const target = document.getElementById(tab.dataset.tabTarget);
+        
+        tabContents.forEach(tc => tc.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
+        
+        tab.classList.add('active');
+        target.classList.add('active');
+      });
+    });
+  });
+
+    
+
+        </script>
 </body>
 </html>
+
