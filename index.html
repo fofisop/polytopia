@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poly4</title>
@@ -11,6 +12,11 @@
     border-bottom: 2px solid #ccc; 
   }
 
+body{
+    background-image: url(sa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
    .tab {
     cursor: pointer;
@@ -18,39 +24,58 @@
     text-align: center;
   }
 
+.tab.active {
 
-  .tab.active {
-    background-color: #fff;
-    border-bottom: 3px solid #000; 
     font-weight: bold;
-  }
+}
 
 
-  [data-tab-content] { display: none; padding: 20px; }
-  .active[data-tab-content] { display: block; }
+[data-tab-content] {
+    display: none;
+    padding: 30px;
+    margin: 40px auto;
+    width: 70%;
+    min-height: 500px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
 
-</style>
+.active[data-tab-content] {
+    display: block;
+}
+#h { background: beige; }
+
+#a { background: #d9ffff; }
+
+#e{ background: #ffd9ff; }
+
+#p{ background: #d6ecff; }
+
+#c { background: #ddffdd; }
+
     </style>
 </head>
 <body>
    <ul class="tabs">
-  <li data-tab-target="1" class="active tab">Home</li>
-  <li data-tab-target="2" class="tab">Aquarion</li>
-  <li data-tab-target="3" class="tab">∑∫ỹriȱŋ</li>
-  <li data-tab-target="4" class="tab">Polaris</li>
-  <li data-tab-target="5" class="tab">Cymanti</li>
+  <li data-tab-target="h" class="active tab">Home</li>
+  <li data-tab-target="a" class="tab">Aquarion</li>
+  <li data-tab-target="e" class="tab">∑∫ỹriȱŋ</li>
+  <li data-tab-target="p" class="tab">Polaris</li>
+  <li data-tab-target="c" class="tab">Cymanti</li>
 </ul>
 
 
     <section>
-        <article id="1" data-tab-content>
+        <article id="h" class="active" data-tab-content >
             <h1>Home</h1>
             <p>This is a website showcasing tips and tricks on how to succeed in Polytopia with special tribes.</p>
             <p> This is not sponsored in any way, shape, or form.</p>
+            <p>All rights are to Polytopia</p>
             <section></section>
         </article>
 
-        <article id="2" data-tab-content>
+        <article id="a" data-tab-content>
             <h1>Aquarion</h1>
             <p>The oceanic tribe known for theri speedy attacks and their amazing life on water.</p>
             <p><bold>Top ten tips on how to play with this tribe:</bold></p>
@@ -62,51 +87,78 @@
             <p>6.Explore deep sea ruins to grow quickly! This is the best thing to do if you want to grow a giant empire wit hthsi tribe.</p>
             <p>7.Auto flood land with the crab to move faster on land while slowign down the enemy.</p>
             <p>8.Jelly tanking. Though I already mentioned jellies in thsi list, I did not state yet that you can use them as a shield to protect large groups of travelers on your side.</p>
-            <p>9.If yoru crab attacks an enemy in a city surrounded by water, it cna push them into water. If that unit is nto amphibious, it will drown instantly allowing you to claim the city.</p>
-            <p>10.Don't forget that yo ucna build any structure directly on water tiles with aqua base. This can come in handy in the long game.</p>
+            <p>9.If your crab attacks an enemy in a city surrounded by water, it cna push them into water. If that unit is not amphibious, it will drown instantly allowing you to claim the city.</p>
+            <p>10.Don't forget that you can build any structure directly on water tiles with aqua base. This can come in handy in the long game.</p>
         </article>
 
-        <article id="3" data-tab-content>
+        <article id="e" data-tab-content>
             <h1>∑∫ỹriȱŋ</h1>
             <p>The fantasy-like tribe that views nature to be divine.</p>
+            <p><b>Top ten tips on how to play with this tribe:</b></p> <p>1.Never regret not being able to chop trees. A well-placed sanctuary surrounded by forests and animals provides a permanent stream of stars and free Polytaur fodder.</p> <p>2. Research forestry immediately to overwhelm enemies with polytaurs</p> <p>3.Only enchant animals when you need them for a specific attack. Keeping them wild around a Sanctuary generates better long-term income.</p> 
+            <p>4.Adult fire dragons deal splash damage,so rember to target the unit next to your target to hit both.</p> 
+            <p>5.If you want to lead an army without spending too much, let polytaurs have the frontline with archers behind them.</p> 
+            <p>6.While experiencing the "starvation" period or waiting for your dragon to grow up, prepare a shield over each city.</p>
+             <p>7.If playing for points, build sawmills and markets, as you may have an advantage here.</p>
+              <p>8.Polytaurs are build for profit! OCnsidering that a poltaur is worth 2 stars, capturing a city with it will repay it's price in one turn. Murdering enemies with the polytaur can also give great profit.</p> 
+              <p>9.Baby dragons have a dash ability, which allows them to fight while beign able to retreat.</p>
+               <p>10.Always fly over mountains or bodies of water with the dragon where regular units can't follow.</p>
+
             <section></section>
         </article>
 
-        <article id="4" data-tab-content>
+        <article id="p" data-tab-content>
             <h1>Polaris</h1>
             <p>Known for their snowy apprance and icy gliding.</p>
+            <p><b>Top ten tips on how to play with this tribe:</b></p> 
+            <p>1.Rushing the ice bank is your number one priority. The faster you freeze the ocean, the faster you become the richest tribe in the game.</p>
+             <p>2. Your starting Mooni is fragile. Use its Freeze action to create a path, then move a Warrior onto that ice to protect the Mooni. Never leave a Mooni exposed on the frontline.</p>
+              <p>3. Even if you don't plan to move units toward a corner of the map, send a Mooni there just to freeze the water. Every frozen tile increases your Ice Bank income.</p>
+               <p>4. You can use ice to block enemy ships.</p>
+                <p>5. Load up your battle sled squad and send them on the ice. You won't regret it!</p>
+                 <p>6. Break ice under non amphibious enemies to drown them.</p> 
+                 <p>7. If you have multiple Moonis, you can "chain freeze" a large area in one turn. Use this to create a sudden bridge to an enemy's "safe" island.</p> 
+                 <p>8. Place an ice fortress on your three most important cities, surrounded by Moonis</p>
+                  <p>9. Take note that attackign a frozen unit with the ice archer will unfreeze it.</p> 
+                  <p>10.Combining the polarism tech with Knights leads to a speedy combo.</p>
+
         </article>
 
-        <article id="5" data-tab-content>
+
+        <article id="c" data-tab-content>
             <h1>Cymanti</h1>
             <p>An insect themed tribe with poison effects.</p>
+             <p><b>Top ten tips on how to play with this tribe:</b></p> 
+            <p>1. Open the game with a "boost"</p>
+             <p>2. Hexapods are your most important early unit. They are like glass cannons of the bug world.</p>
+              <p>3. Use Physchis for early scouting. Their wings can fly over any water or mountains!</p>
+               <p>4. When able, always attack with poison first, then attack with other forms of damage.</p>
+                <p>5. Use disposable units to go out and murder sea life to creat algae bridges.</p>
+                 <p>6. Be careful with doomux explosionsm, as it can hurt your own troops as much as the enemy.</p> 
+                 <p>7. Wrap your centipide around cities!</p> 
+                 <p>8. If you heal the head of a Centipede, only the head recovers. To keep the whole "train" alive, you need a Shaman to boost the head, which gives the entire unit a speed/attack buff.</p>
+                  <p>9. If playing against Polaris, use algae to slow them down.</p> 
+                  <p>10. Algae provides +1 population. This is often the only way to level up a water surrounded city enough to get a centipede.</p>
             <section></section>
         </article>
     </section>
 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", ()=> {
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     const tabContents = document.querySelectorAll('[data-tab-content]');
     const tabs = document.querySelectorAll('[data-tab-target]');
 
-
-    tabs.forEach (tab => {
-        tab.addEventListener('click', () => {
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
         const target = document.getElementById(tab.dataset.tabTarget);
-        
         tabContents.forEach(tc => tc.classList.remove('active'));
         tabs.forEach(t => t.classList.remove('active'));
-        
         tab.classList.add('active');
         target.classList.add('active');
       });
     });
   });
+</script>
 
-    
-
-        </script>
 </body>
 </html>
 
