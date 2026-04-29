@@ -1,1 +1,1 @@
-As a huge polytopia fan, I decided to create a website on the four nost unique tribes! Shoutout to polytopia!As you can see, I have to use copy and pasting for one thing, and that is the fictional word ∑∫ỹriȱŋ.
+As a huge polytopia fan, I decided to create a website on the four nost unique tribes! Shoutout to polytopia!As you can see, I have to use copy and pasting for one thing, and that is the fictional word ∑∫ỹriȱŋ. Use this website by clicking through the tabs and reading them.
