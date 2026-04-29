@@ -3,6 +3,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poly4</title>
     <style>
+        .trail {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+     border-radius: 3px;
+     pointer-events: none;
+        z-index: 9999;
+    animation: fadeOut 0.5s linear forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.5); }
+}
+        @media (max-width: 600px) {
+    [data-tab-content] {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .tabs {
+        font-size: 13px;
+    }
+}
+
          .tabs {
     display: flex;
     justify-content: space-around;
@@ -10,7 +36,21 @@
     padding: 0;
     margin: 0;
     border-bottom: 2px solid #ccc; 
+     background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
+  
+
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+.tab.active{
+    border-bottom: 3px solid #ff0;
+}
 
 body{
     background-image: url(sa.jpg);
@@ -28,6 +68,11 @@ body{
 
     font-weight: bold;
 }
+.tab:hover {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 10px 10px 0 0;
+}
+
 
 
 [data-tab-content] {
@@ -157,6 +202,21 @@ body{
       });
     });
   });
+
+
+
+
+  document.addEventListener('mousemove', (e) => {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+     trail.style.left = e.pageX + 'px';
+    trail.style.top = e.pageY + 'px';
+    
+    document.body.appendChild(trail);
+     setTimeout(() => {
+        trail.remove();
+    }, 500);
+});
 </script>
 
 </body>
